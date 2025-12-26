@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body {
+                margin:0;
+                font-family:monospace;
+            }
+            .topnav{
+                overflow:hidden;
+                background-color: beige;
+            }
+            .topnav a {
+                float:left;
+                color:black;
+                text-align:center;
+                padding:14px 16px;
+                font-size:17px;
+            }
+            .topnav a:hover{
+                background-color: crimson;
+                color: cyan;
+            }
+            .topnav a.active{
+                background-color: dimgray;
+                color: aliceblue;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </div>
+        <section>
+            <img class="myslides" src="download (15).jpg" height="600px" width="100%">
+            <img class="myslides" src="download (16).jpg" height="600px" width="100%">
+            <img class="myslides" src="download (17).jpg" height="600px" width="100%">
+        </section>
+        <script>
+            var myindex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("myslides");
+                for (i =0; i<x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myindex++;
+                if (myindex >x.length) {myindex = 1};
+                x[myindex-1].style.display ="block";
+                setTimeout(carousel,3000);
+            }
+        </script>
+    </body>
+</html>
