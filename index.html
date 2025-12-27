@@ -26,8 +26,81 @@
                 background-color: dimgray;
                 color: aliceblue;
             }
+            .section{
+                padding: 40px;
+                text-align: center;
+            }
+            .section-dark{
+                background-color: dimgray;
+                color: white;
+            }
+            .border{
+                padding:10px;
+                background-color: darkslategray;
+                color: white;
+            }
+            .trans{
+                opacity: 0.6;
+            }
+            .pimg3{
+                background-image: url("download\ \(17\).jpg");
+                min-height: 300px;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
+            .ptext{
+                text-align:center;
+                padding-top: 100px;
+            }
+            .food-title{
+                font-size: 26px;
+                color: grey;
+                margin-left: 15px;
+            }
+            .food-cards{
+                padding:40px;
+                background-color: rgb(255, 255, 255);
+                text-align: center;
+            }
+            .card-container{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            .card{
+                background-color: white;
+                width:250px;
+                padding:15px;
+                margin:15px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                border-radius:8px;
+            }
+            .card img {
 
-            
+width: 100%;
+
+height: 150px;
+
+border-radius: 5px;
+
+}
+            .card h3 {
+
+margin-top: 10px;
+
+}
+.footer {
+
+background-color: #111;
+
+color: white;
+
+text-align: center;
+
+padding: 15px;
+
+}
         </style>
     </head>
     <body>
@@ -56,5 +129,54 @@
                 setTimeout(carousel,3000);
             }
         </script>
+        <section class="food-cards">
+            <h2>Popular foods</h2>
+            <div class="card-container">
+               <div class="card">
+                     <img src="download (15).jpg" >
+                     <h2>Pizza</h2>
+                     <p>Delicious Italian dish with cheese and sauce.</p>
+               </div>
+                <div class="card">
+                    <img src="download (16).jpg">
+                    <h2>Pasta</h2>
+                    <p>Delicious Italian dish with cheese and sauce.</p>
+                </div>
+                <div class="card">
+                    <img src="download (17).jpg">
+                    <h2>BURGER</h2>
+                    <p>A quick snack with layers of flavour.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section-dark">
+            <h2>Food</h2>
+            <p>Food is any substance consumed to provide nutritional support for an organism. It is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth.</p>
+        </section>
+        <div class="pimg3">
+            <div class="ptext">
+                <span class="border trans">
+                    Food is any substance consumed to provide nutritional support for an organism.
+                </span>
+                <br><br><br>
+            </div>
+        </div>
+        <center><h2>Pizza</h2></center>
+        <p>
+            <img src="download (15).jpg" style="width:170px;height:170px;margin-left:15px; float: right;">
+            Pizza is a popular dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, vegetables, meat, etc.) which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.
+        </p>
+        <br><hr>
+        <center>
+            <h2>Pasta</h2>
+        </center>
+        <p>
+            <img src="download (16).jpg" style="width:170px;height:170px;margin-left:15px; float: right;">
+            Pasta is a type of food made from dough of flour and water, often served with sauce or other ingredients. It is a staple food in many cultures and comes in various shapes and sizes.
+        </p>
+        <br><br><br>
+        <section class="section section-dark">
+            2025 &copy; website created by Shubhang 
+        </section>
     </body>
 </html>
